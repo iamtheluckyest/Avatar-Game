@@ -34,6 +34,13 @@ img {
 	
 }
 
-.round1 {
-	
+button.btn {
+	display: none;
+}
+
+#vs{
+	display:inline; 
+	float:left; 
+	position:relative; 
+	top:75px;
 }
