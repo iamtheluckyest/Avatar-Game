@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(67,75,38, .4);
+	color: black;
+	text-align: center;
+}
+
+.row2, .row3, .row4 {
+	width:100%;
+	padding: 15px;
+	clear:both;
+	height:100px;
+}
+
+.charBox {
+	width:16.666%;
+	height: auto;
+	padding:15px;
+	float:left;
+
+}
+
+img {
+	width:100%;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	
+}
+
+.round1 {
+	
+}
