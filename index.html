@@ -3,41 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Avatar: The Last Airbender RPG</title>
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
 </head>
 <body>
 	<div class="container">
-		<div class="row"> <!-- .row -->
+		<div class="jumbotron">
 			<div class="header">
-				<h1>Avatar: The Last Airbender RPG</h1>
-				<h2 id="instructions"></h2>
-				<button class="btn btn-default" id="attackBtn">Attack!</button>
-				<button class="btn btn-success" id="playAgain">Play again!</button>
+				<img src="assets/images/avatar-header.png" alt="Avatar: The Last Airbender">
 			</div>
-		</div> <!--end .row -->
- 
-		<div class="row"> <!-- .row -->
-			<div class="row2 center">
-
-			</div>
-		</div> <!--end .row -->
-
-		<div class="row"> <!-- .row-->
-			<div class="row3 center">
-
-			</div>
-		</div> <!--end .row-->
-
-		<div class="row"> <!-- .row-->
-			<div class="row4 center">
-
-			</div>
-		</div> <!--end .row-->
+		</div>
 		
+		<div class="row instructions-box">
+	 		<h2 id="instructions"></h2>
+			<button class="btn btn-lg btn-default" id="attackBtn">Attack!</button>
+			<button class="btn btn-lg btn-success" id="playAgain">Play again!</button>
+	 	</div>
+	 	<div class="jumbotron">
+			<div class="row"> <!-- .row -->
+				<div id="message"></div>
+				<div class="row2 center">
+					
+				</div>
+				<div id="divider">
+					<hr>
+					<h3>Remaining Opponents</h3>
+				</div>
+			</div> <!--end .row -->
 
+			<div class="row"> <!-- .row-->
+				<div class="row3 center">
+				</div>
+			</div> <!--end .row-->
+		</div>
 	</div> <!-- end .container-->
+
 	<script src="assets/javascript/game.js"></script>
 </body>
 </html>

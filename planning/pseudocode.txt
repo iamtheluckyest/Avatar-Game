@@ -1,0 +1,20 @@
+Star Wars game:
+- Generate players
+	- use prototypes
+	- Need name, attack, hp, counterattack, image
+	- Need to make sure that algorithm makes sense so that all opponents can defeat all the rest
+- Option to pick player
+	- click listener that receives player data and gives it to player variable/function
+		- then rearranges board
+- Pick opponent
+	- click listener that receives opponent data and gives it to variable
+	- must remove it from available options, put it in new div
+- Attack button
+	- reduces opponent health
+	- counterattack that reduces own health
+	- display information
+	- check if win/lose
+		- if win, select next opponent (defeated not an option)
+		- if lose, game over, restart
+Total win
+	- display win screen

@@ -1,36 +1,48 @@
 *{
 	box-sizing: border-box;
+	vertical-align: middle;
 }
 
 body {
-	background-color: rgba(67,75,38, .4);
+	width:100%;
+	background-color: #ee8d30;
 	color: black;
 	text-align: center;
+	padding:20px;
 }
 
-.row2, .row3, .row4 {
+.jumbotron {
+	border: 1px solid #aaa;
+	background-color: #fff;
+	position:relative;
+}
+
+.row2, .row3 {
 	width:100%;
 	padding: 15px;
-	clear:both;
-	height:100px;
+}
+
+div#divider > hr {
+	background-color: #ccc;
+    height: 2px;;
+    width: 100%;
 }
 
 .charBox {
 	width:16.666%;
-	height: auto;
+	min-width: 150px;
 	padding:15px;
-	float:left;
-
+	display:inline-block;
 }
 
 img {
 	width:100%;
+	min-width: 150px;
 }
 
 .center {
 	margin-left:auto;
 	margin-right:auto;
-	clear:both;
 	
 }
 
@@ -39,8 +51,64 @@ button.btn {
 }
 
 #vs{
-	display:inline; 
-	float:left; 
-	position:relative; 
-	top:75px;
+	display:inline-block;
+	margin:auto 30px;
+}
+
+.header {
+	width:40%;
+	display:inline-block;
+}
+
+#instructions {
+	color:#fff;
+	font-family: 'Permanent Marker', sans-serif;
+	font-size: 2.4em;
+}
+
+.instructions-box {
+	margin:30px auto;
+}
+
+#message {
+	position:absolute;
+	top:-70px;
+	right:0px;
+	left:0px;
+	margin:0px auto;
+	z-index: 2;
+	width:350px;
+	padding:15px;
+	background-color: #fff;
+	border: .5px solid #ee8d30;
+	box-shadow: 0px 0px 5px 1px #bbb;
+	display:none;
+	text-align:left;
+}
+
+#ok {
+	color:#ee8d30;
+	cursor: pointer;
+	text-align: center;
+	margin:5px 0px;
+}
+
+@media screen and (max-width: 768px){
+	.header {
+		width:70%;
+		display:inline-block;
+	}
+	
+	#vs{
+		display:block;
+		margin:auto 30px;
+	}
+	
+	body {
+		padding:5px;
+	}
+
+	.jumbotron {
+		margin-bottom: 10px;
+	}
 }
