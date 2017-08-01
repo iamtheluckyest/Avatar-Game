@@ -25,11 +25,11 @@ $(document).ready(function() {
 	function startGame(){
 		// For restarting game
 		characters = {
-			aang : new makeChar('Aang', 'assets/images/aang.png', 295, 10, 15),
-			katara : new makeChar('Katara', 'assets/images/katara.png', 95, 40, 25),
+			aang : new makeChar('Aang', 'assets/images/aang.png', 285, 10, 15),
+			katara : new makeChar('Katara', 'assets/images/katara.png', 105, 40, 25),
 			sokka : new makeChar('Sokka', 'assets/images/sokka.png', 55, 20, 10),
 			zuko : new makeChar('Zuko', 'assets/images/zuko.png', 140, 35, 20),
-			toph : new makeChar('Toph', 'assets/images/toph.png', 135, 50, 50),
+			toph : new makeChar('Toph', 'assets/images/toph.png', 135, 45, 45),
 			azula : new makeChar('Azula', 'assets/images/azula.png', 300, 5, 15)
 		};
 		$(".row2").empty();
@@ -99,6 +99,8 @@ $(document).ready(function() {
 		//Attack and change stats
 		opponent.hp -= hero.attack;
 		hero.hp -= opponent.counterAttack;
+		// $(this).blur(); //Not working. Want to make it so that the button can't be clicked while the message is up.
+		// $(this).attr("disabled", true);
 		$("#message").css("display", "block");
 		$("#message").append("<p>You deliver <strong>" + hero.attack + "</strong> damage to " + opponent.name + ".<br>"
 		 + opponent.name + " delivers <strong>" + opponent.counterAttack 
@@ -107,6 +109,8 @@ $(document).ready(function() {
 		$("#ok").on("click", function() {
 			$("#message").empty();
 			$("#message").css("display", "none");
+			$("#attackBtn").attr("disabled", false);
+
 			
 
 			// Reprint with new stat values
