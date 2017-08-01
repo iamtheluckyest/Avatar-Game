@@ -159,16 +159,18 @@ $(document).ready(function() {
 ********************************************/
 	$(document).on({
 		mouseenter : function() {
-		$(this).fadeTo("fast", .5);
-		$("html, body").css("cursor", "pointer");
+			$(this).fadeTo("fast", .8);
+			$("html, body").css("cursor", "pointer");
+			$(this).css("border", "1px solid #ee8d30");
 		},
 		mouseleave : function(){
-		$(this).fadeTo("fast", 1);
-		$("html, body").css("cursor", "default");
+			$(this).fadeTo("fast", 1);
+			$("html, body").css("cursor", "default");
+			$(this).css("border", "1px solid #fff");
 		},
 		click : function(){
-		$(this).fadeTo("fast", 1);
-		$("html, body").css("cursor", "default");
+			$(this).fadeTo("fast", 1);
+			$("html, body").css("cursor", "default");
 		}
 	}, ".pickOpp, .pickHero");
 
