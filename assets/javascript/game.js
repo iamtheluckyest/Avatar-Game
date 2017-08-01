@@ -29,7 +29,7 @@ $(document).ready(function() {
 			katara : new makeChar('Katara', 'assets/images/katara.png', 95, 40, 25),
 			sokka : new makeChar('Sokka', 'assets/images/sokka.png', 55, 20, 10),
 			zuko : new makeChar('Zuko', 'assets/images/zuko.png', 140, 35, 20),
-			toph : new makeChar('Toph', 'assets/images/toph.png', 135, 75, 50),
+			toph : new makeChar('Toph', 'assets/images/toph.png', 135, 50, 50),
 			azula : new makeChar('Azula', 'assets/images/azula.png', 300, 5, 15)
 		};
 		$(".row2").empty();
