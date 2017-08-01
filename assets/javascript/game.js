@@ -99,12 +99,11 @@ $(document).ready(function() {
 		//Attack and change stats
 		opponent.hp -= hero.attack;
 		hero.hp -= opponent.counterAttack;
-		hero.attack += baseAttack;
 		$("#message").css("display", "block");
 		$("#message").append("<p>You deliver <strong>" + hero.attack + "</strong> damage to " + opponent.name + ".<br>"
 		 + opponent.name + " delivers <strong>" + opponent.counterAttack 
 		 + "</strong> damage to you.<br>You gain experience, increasing your attack by <strong>" + baseAttack + "</strong>.<br></p><p id='ok'>OK</p>");
-
+		hero.attack += baseAttack;
 		$("#ok").on("click", function() {
 			$("#message").empty();
 			$("#message").css("display", "none");
